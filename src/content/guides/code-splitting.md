@@ -273,6 +273,7 @@ __src/index.js__
 - function getComponent() {
 + async function getComponent() {
 -   return import(/* webpackChunkName: "lodash" */ 'lodash').then(_ => {
+-     var _ = _.default;
 -     var element = document.createElement('div');
 -
 -     element.innerHTML = _.join(['Hello', 'webpack'], ' ');
